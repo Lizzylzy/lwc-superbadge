@@ -1,0 +1,9 @@
+<template>
+    <!-- {contacts.length} -->
+    <lightning-card>
+        <template for:each={contacts} for:item="c">
+            <div key={c.Id}>{c.Name}</div>
+        </template>
+        <lightning-button variant="brand" onclick={handleButtonClick} label="Call Apex Imperative"></lightning-button>
+    </lightning-card>
+</template>
